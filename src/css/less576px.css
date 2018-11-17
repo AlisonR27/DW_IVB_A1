@@ -13,7 +13,13 @@
 		div[name=navbarHead]{
 			width:100%;
 		}
+		ul[name="BarRest"]::before{
+			display: none;
+		}
 		ul[name="BarRest"]{
+			display: none;
+		}
+		ul[name="BarRest"]::after{
 			display: none;
 		}
 		/*Formatação básica da Barra*/
