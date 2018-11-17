@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<Meta charset="UTF-8">
+	<title>NihonTube</title>
+	<link rel="stylesheet" type="text/css" href="src\css\style.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 575.98px)" href="src\css\less576px.css">
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 576px)" href="src\css\576px.css">
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" href="src\css\768px.css">
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 992px)" href="src\css\992px.css">
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 1200px)" href=https://github.com/AlisonR27/DW_IVB_A1/blob/master/src/css/1200px.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="src\js\script.js"></script>
+	<link rel="stylesheet" href="https://icono-49d6.kxcdn.com/icono.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+</head>		
+<body  >
+<!-- Horizontal Bar -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header" name="navbarHead">
+      <a class="navbar-brand" href="#">
+      		<img src="src\img\logo.png" width="30" height="30" style="float: left;margin-top: -5%;">
+      		NihonTube
+  	  </a>
+  	  <a href="#" class="flipkart-navbar-button float-right align-middle" name="hamburguerExpander"><div class="icono-hamburger" name="hamicon"></div></a>    
+    </div>
+    <ul class="nav navbar-nav" name="BarRest">
+      <li id="big">
+                <div class="row">
+                    <input class="flipkart-navbar-input col-xs-11" type="" placeholder="Search..." name="">
+                    <button class="flipkart-navbar-button col-xs-1">
+                        <svg width="15px" height="15px">
+                            <path d="M11.618 9.897l4.224 4.212c.092.09.1.23.02.312l-1.464 1.46c-.08.08-.222.072-.314-.02L9.868 11.66M6.486 10.9c-2.42 0-4.38-1.955-4.38-4.367 0-2.413 1.96-4.37 4.38-4.37s4.38 1.957 4.38 4.37c0 2.412-1.96 4.368-4.38 4.368m0-10.834C2.904.066 0 2.96 0 6.533 0 10.105 2.904 13 6.486 13s6.487-2.895 6.487-6.467c0-3.572-2.905-6.467-6.487-6.467"></path>
+                        </svg>
+                    </button>
+                </div></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a id="icons" href="#"><i class="material-icons">notifications_none</i></a></li>
+      <li><a id="expander" href="#"><i class="fa fa-user" aria-hidden="true"></i><i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+</nav>
+<div class="userBox">
+	<div class="uBc">
+		<div id="ubl1">Default User</div>
+		<a><div class="uBl">Option 1</div></a>
+		<a><div class="uBl">Option 2</div></a>
+		<a><div class="uBl">Option 3</div></a>
+		<a><div class="uBl">Option 4</div></a>
+		<a><div class="uBl">Modo Noturno:</div></a>
+	</div>
+</div>
+<!-- Horizontal Bar Limit -->
+<div class="linha">
+	<!-- Bloco do vídeo -->
+	<div class="block1">
+		<!-- Player -->
+		  <div class="vid">
+		  		<img id="plThumb" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/Sintel.jpg">
+		  		<h1 id="plTime">14:47</h1>
+		  		<div id="player">
+                		<video id="vidID" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4" type="video/mp4" controls>
+                		</video>
+            	</div>
+            </div>
+		<!-- Fim do player -->
+		<div class="infos">
+				<div class="Name">
+					<h1 id="VidTitle">Sintel is an independently produced short film</h1>
+					<br>
+					<h4 id="VidSubtitle"> By Blender Foundation</h4>
+				</div>
+				<div class="LiveStats">
+					<div id="Like">
+						<a href="#" id="LikeL"><img id="LikeIMG" src="https://www.iconsdb.com/icons/preview/royal-blue/thumbs-up-xxl.png"></a>
+						<h5 id="ctdLike" name="ctdLike">???</h5>
+					</div>
+					<div id="Deslike">
+						<a href="#" id="LikeD"><img id="deslikeIMG" src="https://www.iconsdb.com/icons/preview/royal-blue/thumbs-down-xxl.png"></a>
+						<h5 id="ctdDeslike" name="ctdDeslike">???</h5>
+					</div>
+				</div>
+		</div>
+	</div>
+	<!-- Fim do bloco do vídeo -->
+	<div class="block2">
+		<div class="coluna">
+			<div class="prx"></div>
+			<div class="indic">
+				<a href="#" class="troca">
+				<div class="vid1">
+					<p name="link">http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4</p>
+					<div class="thumb"><Img src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ElephantsDream.jpg"> <div class="preview-time"><i>10:53</i></div> </div>
+					<div class="info">
+						<h4 id="InfoTitle">The first Blender Open Movie from 2006</h4>
+						<h6 id="InfoSubtitle">By Blender Foundation</h6>
+						<h6>Recomended</h6>
+					</div>
+				</div>
+				</a>
+				<a href="#" class="troca">
+				<div class="vid1">
+					<p name="link">http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4</p>
+					<div class="thumb"><Img src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/SubaruOutbackOnStreetAndDirt.jpg"> <div class="preview-time"><i>09:53</i></div> </div>
+					<div class="info">
+						<h4 id="InfoTitle">The VW GTI Golf Review</h4>
+						<h6 id="InfoSubtitle">By Garage419</h6>
+						<h6>Recomended</h6>
+					</div>
+				</div>
+				</a>
+				<a href="#" class="troca">
+				<div class="vid1">
+					<p name="link">http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4</p>
+					<div class="thumb"><Img src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ForBiggerBlazes.jpg"> <div class="preview-time"><i>00:15</i></div> </div>
+					<div class="info">
+						<h4 id="InfoTitle">HBO GO now works with Chromecast</h4>
+						<h6 id="InfoSubtitle">By Google</h6>
+						<h6>Recomended</h6>
+					</div>
+				</div>
+				</a>
+			</div>	
+		</div>
+	</div>
+</div>
+<a href="#" id="comentHead">Comments <small>▲</small></a><br>
+<div class="linha2">
+
+	<div class="linha2_1">
+		<div id="addComment">
+				<img name="imgUser" src="http://www.icon100.com/up/1733/256/msn_away_brb_outlunch.png"/>
+				<form id="cmntForm">
+						<input type="text" name="txtComment" placeholder="Text an public comment..." required>
+						<div id="botoes">
+						<button type="button" class="btn btn-primary" onclick="AddComentario()">Comentar</button><br>
+						<button type="button" class="btn btn-secondary" onclick="cancelAdd()">Cancelar</button>
+						</div>
+					</div>
+				</form>
+		</div><br>
+		<div id="CommentsArea">
+			</div>
+	</div>
+</div>
+<script type="text/javascript" src="src\js\script.js"></script>
+</body>
+</html>
