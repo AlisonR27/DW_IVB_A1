@@ -100,7 +100,7 @@ $('a[class="troca"]').click(function(){
         time = $("#plTime").html();
         vid = $("#vidID").attr("src");
         $("#vidID").attr("src",($(this).find('p').html()));
-        $("#VidTitle").html($(this).find('#InfoTitle'));
+        $("#VidTitle").html($(this).find('#InfoTitle').html());
         document.getElementById('vidID').load();
         $("#plThumb").attr("src",$(this).find('Img').attr('src'));
         $("#plTime").html($(this).find('i').html());
