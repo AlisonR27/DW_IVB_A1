@@ -1,0 +1,400 @@
+.navbar-default{
+			background-color: white;
+			box-shadow: 0 0em 0.6em rgba(0,0,0,0.4);
+			position: sticky;
+		}	
+		div[name=hamicon]{
+				display: block;
+							}
+		a[name=hamburguerExpander]{
+		margin-top: 1.575%;		
+		right: 0;
+		}
+		div[name=navbarHead]{
+			width:100%;
+		}
+		ul[name="BarRest"]::before{
+			display: none;
+		}
+		ul[name="BarRest"]{
+			display: none;
+		}
+		ul[class="nav navbar-nav"]{
+			display: none;
+		}
+		/*Formatação básica da Barra*/
+			nav [class="navbar navbar-default"]{
+				width: 100%;
+			}
+			.navbar-header{
+				width: 100%;
+			}
+			nav .navbar-nav{
+				width: 100%;
+			}
+			.navbar-nav li {
+				height: 20%;		
+			}
+			.navbar-nav li:first-of-type {
+				width: 75%;
+				margin: auto;
+			}
+			.navbar-nav li div.row{
+				display: inline-block;
+				width: 100%;
+				height: 15%;
+			}
+		/* Fim da Formatação básica da Barra*/
+		/* Delimite da área de pesquisa */
+			#big{ /* Define Diretamente o tamanho do item de pesquisa*/
+				margin-top: 2%;
+				margin-left: 5%;
+				position: relative;
+				width: 100%;
+			}
+			#big div.row{
+				margin-left: 5%;
+			}
+			/* Delimite da área de pesquisa */
+		/* Barra de Pesquisa */
+			.navbar-nav li div div{
+				margin: 0;
+				width: 80%;
+			}
+			.navbar-nav li div div input{
+				width: 60%;		
+				float: left;
+			}
+			input[class="flipkart-navbar-input col-xs-11"]{
+				width: 70%;
+			}
+			.navbar-nav li div div button{
+				float: right;
+				width: 20%;
+				padding: 0;	
+			}
+			.navbar-nav li div div button svg{
+				padding: 0;
+				float: none;
+				left: 0;
+				margin: 0 15% 0 45%;
+				margin-right: 50%;
+				fill: rgb(120,120,120);
+				box-sizing: border-box;
+			}
+			div[class="nav navbar-nav"]{
+				margin: 0 0 0 50%;
+			}
+			/* Fim da barra de pesquisa*/
+		/* Icones da direita*/
+			#icons{
+				padding: 0;
+				margin-left: 2.5%;
+				margin-top: 2%;
+			}
+			#plThumb{
+			 	display: none;
+			 }
+			 #plTime{
+			 	display: none;
+			 }
+			 p[name="link"]{
+			 	display: none;
+			 }	
+			 .userBox{
+				width: 60%;
+				margin: -4.45% 0 0 15%;
+				border: 2px solid rgba(160,160,160,0.3);
+				background-color: rgba(255,255,255,0.95);
+				box-sizing: border-box;
+				position: absolute;
+				display: none;
+				z-index: 2;
+					}	
+			.uBc{
+				padding: 7%;
+				display: flex;
+				text-align: center;
+				flex-direction: column;
+			}
+			.uBc a{
+				margin: 1% 0;
+				text-decoration-line: none;
+				cursor: pointer;
+			}
+			.uBc a:hover{
+				text-decoration:none;
+			}
+			.uBl{
+				padding: 7.5% 5%;
+				color: #404040;
+				text-decoration: none;
+				flex-direction: row;
+			}
+			 /*Delimitação do primeiro bloco*/
+						.linha .block1 {
+							width: 95%;
+							height: 32.62500%;
+							margin: 1% 2%;
+							padding: 0;
+						/*	background-color: red;*/
+						}
+						/*Fim da Delimitação do primeiro bloco*/
+					/*Delimitação do player de video*/
+						#player{ /*Define largura total para o bloco*/
+							box-sizing: border-box;
+							padding: 0;
+							height: 100%;
+							width: 100%;
+						}
+						#player video{
+							width: 100%;
+							height: 100%;
+						}
+						.vid{
+							width: 100%;
+							height: 100%;
+						}
+			.LiveStats{
+			 	float: right;
+			 	display: inline-block;
+			 	width: 50%;
+			 	padding: 0;
+			 	margin-right: -26.5%;
+			 	margin-top: -5.75%;
+			 	height: 100%;
+			 }
+			 #Like{
+			 	float: left;
+			 	display: inline-block;
+			 	width: 30%;
+			 }
+			 #Like h5{
+			 	padding: 4%;
+			 	height: 100%;
+			 	font-size: 0.5em;
+			 	font-weight: bold;
+			 	color: royalblue;
+			 	margin: 7% 0 0 15%;
+			 }
+			 #Deslike{
+			 	display: inline-block;
+			 	height: 100%	;
+			 	margin: 0 0 0 0;
+			 	width: 30%;
+			 }
+			 #Deslike h5{
+			 	padding: 4%;
+			 	height: 100%;
+			 	float: left;
+			 	font-size: 0.5em;
+			 	font-weight: bold;
+			 	color: royalblue;
+			 	margin: -21% 0 0 0;
+			 }
+			 #LikeIMG{
+			 	float: left;
+			 	width: 20%;
+			 	margin: 7.5% 0 0 0;
+			 	vertical-align: middle;
+			 }
+			 #deslikeIMG{
+			 	float: left;
+			 	width: 20%;
+			    margin:-17% 0 0 0;
+			 	vertical-align: middle;
+			 }
+			 .infos h1{
+			 	font-size:1em;
+			 	margin: 1.5% 0 0.2% 1%;
+			 }
+			 .infos h4{
+			 	font-size:0.5em;
+			 	margin: -2% 0 1.5% 1%;
+			 	color: #505050;
+			 }
+			 .linha .block2 {
+						/*background-color: blue;*/
+						margin: 1% 0 1% 1%;
+						width: 100%;
+					}
+					.coluna .indic {
+						width: 100%;
+					}
+					.coluna .indic .vid1{
+						padding: 3%;
+						display: inline-block;
+						width: 100%;
+					}
+					.coluna .indic .vid1 .thumb img{
+						display: inline;
+						width: 30%;
+						margin: 0% 0 0 0;
+						float: left;
+					}
+					.coluna .indic .vid1 .thumb .preview-time{
+						background-color: rgba(150,50,50,0.6	);
+						color: white;
+						border: none;
+						font-size: 0.45em;
+						border-radius: 3px;
+						padding: 1%;	
+						z-index: 1;
+						text-align: center;
+						margin: -1% 0 -60% -7.5%;
+						display: inline;
+						} 
+					.coluna .indic .vid1 .info{
+						width: 70%;
+						margin: -10% 0 0 32%;
+					}
+					.coluna .indic a .vid1 .info h4{
+						font-size: 0.75em;
+						font-weight: 500;
+					}
+					.coluna .indic a .vid1 .info h6{
+						font-size: 0.3em;
+						margin:-2% 0 6% 0;
+						color: #505050;
+					}
+					/*Divisão da segunda linha (Comentários)*/
+				.linha2{
+					display: none;
+					flex-direction: row;
+					width: 100%;
+				}
+				.linha2_1{
+					display: flex;
+					flex-direction: column;
+					width: 100%;
+					
+				}
+				#comentHead{
+					font-size: 1em;
+					color: #404040;
+					font-family: sans-serif;
+					margin: 1% 0 0 3%;	
+					text-decoration: none;
+				}
+				#comentHead small{
+					font-size: 0.8em;
+					margin: -1% 0 0 0;
+				}
+				#comentHead:hover{
+					text-decoration: none;
+				}
+				.coluna1{
+
+				}
+				.coluna2{
+
+				}
+				.linha2_2{
+					display: flex;
+					flex-direction: row;
+				}
+				/* Primeiro Bloco */
+					#addComment{
+						width: 100%;
+						height: 20%;
+					}
+					#addComment img{
+						padding: 1% 2.5%;
+						margin: 0.75% 0 0 0;
+						width: 10%;
+						
+					}
+					#cmntForm{
+						float: right;
+						height: 30%;
+						width: 90%;
+					}
+					#cmntForm input[type=text]{
+						width: 80%;
+						border: 2px solid lightgrey;
+						border-bottom: 2px solid rgba(20,30,200,0.1);
+			   		    border-radius: 4px;
+						font-size: 0.8em;
+						padding: 0.15em 0.05em;		
+						margin: 0.5% 0 0 0;
+					}
+					#addC
+					{
+						margin: inherit;
+						border: none;
+						box-sizing: border-box;	
+						background-color: royalblue;	
+						right: 0;
+						display: inherit;
+					}
+
+					.coluna1{
+						width: 10%;
+						height: 100%;
+						float: left;
+					}
+					.coluna2{
+						width: 80%;
+						height: 100%;
+						float: right;
+					}
+					.coluna2_row1{
+						height: 70%;
+						display: inline-block;
+					}
+					.coluna2_row2{
+						margin-top: 4%;
+						margin-bottom: 0;
+						height: 30%;
+						width: 100%;
+						display: inline-block;
+					}
+					.comentario{
+						width: 65%;
+						height: 20%;
+						border: 2px solid lightgrey;
+						border-radius: 5px;
+						display: inline-block;
+						padding: 0.5%;
+						overflow-wrap: break-word;
+						word-wrap: break-word;
+						word-break: break-all;
+						font-size: 0.6em;
+						margin: 1% 1% 1% 15%;
+						background-color: white;
+					}
+					.comentimg{
+						width: 100%;
+						padding: 0;
+						margin: 0;
+					}
+					.comentario p#data{
+						font-size: 0.45em;
+						margin: 0 0 0% 33%;
+						align-self: flex-end;
+						color:gray;
+					}
+					.comentario p#usuario{
+						font-size: 0.65em;
+						text-align: center;
+						padding: 0;
+						color:gray;
+					}
+					#ComentsArea{
+						overflow: auto;
+						width: 100%;
+						margin-top: 20%;
+					}
+					#botoes{
+						float: right;
+						margin-top: -2%;
+						height: 10%;
+						width: 10%;
+						display: none;
+					}
+					#botoes button{
+						height: 30%;
+						font-size: 0.5em;
+						padding: 0.15em;
+						margin: -1% 0 0.005% -30%;
+					}
