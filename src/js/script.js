@@ -126,4 +126,3 @@ $('a[ class="flipkart-navbar-button float-right align-middle"]').click(function(
         break;
         }
         });
-    });
