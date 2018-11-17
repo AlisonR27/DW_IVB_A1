@@ -1,10 +1,19 @@
 // Declarações de variaveis
+var xx = $('nav[class="navbar navbar-default"]').css("border-color");
+var xb = $("body").css("background-color");
+var xc = $('div[class="container-fluid"]').css("background-color");
+var xt = $("#VidTitle").css("color");
+var xn = $("#VidSubtitle").css("color");
+var xm = $("#comentHead").css("color");
 var title;
 var subtitle;
 var thumb;
 var vid;
 var time;
 var contador =0;
+var contador1 =0;
+var contador2 =0;
+var contadorTheme = 0;
 var qntdLike = Math.floor(retornaAlet());
 var valorLike = 0;
 var qntdDeslike = Math.floor(retornaAlet());
@@ -20,7 +29,7 @@ function AddComentario(){
     var dataFinal = " "+dayName[now.getDay()]+","+now.getDate ()+" de "+monName[now.getMonth()]+" de "+now.getFullYear()+" | "+now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds() + " GMT "+now.getTimezoneOffset()/60+".";
     var comment = $('input[name="txtComment"]').val();
     var scc = $('img[name="imgUser"]').attr( "src" );
-    var x = '<div class="comentario"><div class="coluna1"><img class="comentimg" src="'+scc+'"><p id="usuario">User</p></div><div class="coluna2"><div class="coluna2_row1"><p>'+comment+'</p></div><div class="coluna2_row2"><p id="data">'+dataFinal+'</p></div></div></div>';
+    var x = '<div class="comentario"><div class="coluna1"><img class="comentimg" src="'+scc+'"><p id="usuario">User</p></div><div class="coluna2"><div class="coluna2_row1"><p name="comentarium" id="commentt">'+comment+'</p></div><div class="coluna2_row2"><p id="data">'+dataFinal+'</p></div></div></div>';
     $('#CommentsArea').prepend(x);
     $('')
     $('input[name="txtComment"]').val(null);
@@ -75,16 +84,16 @@ $("#expander").click(function(){
         }
         });
 $("#comentHead").click(function() {
-    switch (contador){
+    switch (contador1){
         default:
         $('div[class="linha2"]').slideDown()
         $("#comentHead").html("Comments <small>▼</small>")
-        contador++
+        contador1++
         break;
         case 0:
         $('div[class="linha2"]').slideDown()
         $("#comentHead").html("Comments <small>▼</small>")
-        contador++
+        contador1++
         break;
         case 1:$('div[class="linha2"]').slideUp();
         $("#comentHead").html("Comments <small>▲</small>")   
@@ -114,14 +123,36 @@ $('a[class="troca"]').click(function(){
         resetaLikes();
         });
 $('a[ class="flipkart-navbar-button float-right align-middle"]').click(function(){
-    switch(contador){
+    switch(contador2){
         case 0:
         $('ul[class="nav navbar-nav"]').slideDown()
-        contador++
+        contador2++
         break;
         case 1:
         $('ul[class="nav navbar-nav"]').slideUp()
-        contador--
+        contador2--
         break;
         }
         });
+$("#noturno").click(function(){
+    switch(contadorTheme){
+        case 0:
+        $("body").css("background-color","#080808")
+        $('div[class="container-fluid"]').css("background-color","#202020")
+        $('nav[class="navbar navbar-default"]').css("border-color","black")
+        $("#VidTitle").css("color","#C0C0C0")
+        $("#VidSubtitle").css("color","gray")
+        $("#comentHead").css("color","DarkGray")
+        contadorTheme++
+        break;
+        case 1:
+        $("body").css("background-color",xb)
+        $('div[class="container-fluid"]').css("background-color",xc)
+        $('nav[class="navbar navbar-default"]').css("border-color",xx)
+        $("#VidTitle").css("color",xt)
+        $("#VidSubtitle").css("color",xn)
+        $("#comentHead").css("color",xm)
+        contadorTheme--
+        break;
+    }
+});
