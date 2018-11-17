@@ -16,6 +16,9 @@
 		div[name="BarRest"]{
 			display: none;
 		}
+		ul > div[name="BarRest"]{
+			display: none;
+		}
 		/*Formatação básica da Barra*/
 			.navbar-header{
 				width: 100%;
