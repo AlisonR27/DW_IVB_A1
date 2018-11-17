@@ -18,11 +18,9 @@
 		}
 		ul[name="BarRest"]{
 			display: none;
-			visibility: hidden;
 		}
 		ul[class="nav navbar-nav"]{
 			display: none;
-			visibility: hidden;
 		}
 		/*Formatação básica da Barra*/
 			.navbar-header{
