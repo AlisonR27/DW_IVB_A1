@@ -113,6 +113,6 @@ $('a[class="troca"]').click(function(){
         qntdDeslike = Math.floor(retornaAlet());
         resetaLikes();
         });
-$('a[name="hamburguerExpander"]').click(function(){
+$('a[ class="flipkart-navbar-button float-right align-middle"]').click(function(){
     $('ul[class="nav navbar-nav"]').slideDown();
     });
