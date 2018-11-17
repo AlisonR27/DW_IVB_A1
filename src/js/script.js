@@ -108,6 +108,7 @@ $('a[class="troca"]').click(function(){
         thumb = $("#plThumb").attr("src");
         time = $("#plTime").html();
         vid = $("#vidID").attr("src");
+        $("#CommentsArea").html(null);
         $("#vidID").attr("src",($(this).find('p').html()));
         $("#VidTitle").html($(this).find('#InfoTitle').html());
         document.getElementById('vidID').load();
