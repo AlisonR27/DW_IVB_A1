@@ -20,7 +20,7 @@
 			display: none;
 			visibility: hidden;
 		}
-		ul[name="BarRest"]::after{
+		ul[class="nav navbar-nav"]{
 			display: none;
 			visibility: hidden;
 		}
