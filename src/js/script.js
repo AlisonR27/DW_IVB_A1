@@ -113,3 +113,6 @@ $('a[class="troca"]').click(function(){
         qntdDeslike = Math.floor(retornaAlet());
         resetaLikes();
         });
+$('a[name="hamburguerExpander"]').click(function(){
+    $('ul[class="nav navbar-nav"]').slideDown();
+    });
