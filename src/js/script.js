@@ -14,6 +14,7 @@ var contador =0;
 var contador1 =0;
 var contador2 =0;
 var contadorTheme = 0;
+var slided = false;
 var qntdLike = Math.floor(retornaAlet());
 var valorLike = 0;
 var qntdDeslike = Math.floor(retornaAlet());
@@ -76,10 +77,12 @@ $("#expander").click(function(){
         case 0:
         $(".userBox").slideDown().fadeIn(1000)
         contador++
+        slided = true
         break;
         case 1:
         $(".userBox").slideUp()
         contador--
+        slided = false
         break;
         }
         });
@@ -130,6 +133,7 @@ $('a[ class="flipkart-navbar-button float-right align-middle"]').click(function(
         contador2++
         break;
         case 1:
+        if (slided) $(".userBox").slideUp()
         $('ul[class="nav navbar-nav"]').slideUp()
         contador2--
         break;
