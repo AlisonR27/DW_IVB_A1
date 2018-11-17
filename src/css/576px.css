@@ -1,0 +1,389 @@
+/* Barra de Navegação*/
+		.navbar-default{
+			background-color: white;
+			box-shadow: 0 0em 0.6em rgba(0,0,0,0.4);
+			position: sticky;
+		}
+					div[name=hamicon]{
+				display: none;
+			}
+					div[name=navbarHead]{
+			width:20%;
+		}
+		/*Formatação básica da Barra*/
+			.navbar-header{
+				width: 100%;
+			}
+			nav .navbar-nav{
+				width: 80%;
+			}
+			.navbar-nav li {
+				height: 100%;		
+			}
+		/* Fim da Formatação básica da Barra*/
+		/* Delimite da área de pesquisa */
+			#big{ /* Define Diretamente o tamanho do item de pesquisa*/
+				margin-top: 0.75%;
+				width: 60%;
+			}
+			.navbar-nav li div{
+				width: 100%;	
+				height: 100%;	
+			}
+			/* Delimite da área de pesquisa */
+		/* Barra de Pesquisa */
+			.navbar-nav li div div{
+				margin-top: 2%;
+				margin-left: 2%;
+			}
+			.navbar-nav li div div input{
+				width: 80%;		
+			}
+			.navbar-nav li div div button{
+				width: 15%;
+				padding: 0;	
+			}
+			.navbar-nav li div div button svg{
+				padding: 0;
+				margin-top: 4%;
+				fill: rgb(120,120,120);
+				box-sizing: border-box;
+			}
+			/* Fim da barra de pesquisa*/
+		/* Icones da direita*/
+			#icons{
+				padding: 0;
+				margin-left: 2.5%;
+				margin-top: 50%;
+			}
+			/*Fim dos icones*/
+			.userBox{
+				width: 15%;
+				margin: -1.5% 0 0 75%;
+				border: 2px solid rgba(160,160,160,0.3);
+				background-color: rgba(255,255,255,0.85);
+				box-sizing: border-box;
+				position: absolute;
+				display: none;
+				z-index: 2;
+					}	
+			.uBc{
+				padding: 7%;
+				display: flex;
+				text-align: center;
+				flex-direction: column;
+			}
+			.uBc a{
+				margin: 1% 0;
+				text-decoration-line: none;
+				cursor: pointer;
+			}
+			.uBc a:hover{
+				text-decoration:none;
+			}
+			.uBl{
+				padding: 7.5% 5%;
+				color: #404040;
+				text-decoration: none;
+				flex-direction: row;
+			}
+			/*Corpo da página*/
+		/*Primeira Linha*/
+			/*Divisão da primeira linha (player e indicações)*/
+				.linha{
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					z-index: 1;
+				}
+				.coluna{
+					display: flex;
+					flex-direction: column;
+					flex-wrap: wrap;
+				}
+				/*Fim Divisão da primeira linha (player e indicações)*/
+				/*Primeiro Bloco*/
+					/*Delimitação do primeiro bloco*/
+						.linha .block1 {
+							width: 58%;
+							height: 32.62500%;
+							margin: 1% 2%;
+							padding: 0;
+						/*	background-color: red;*/
+						}
+						/*Fim da Delimitação do primeiro bloco*/
+					/*Delimitação do player de video*/
+						#player{ /*Define largura total para o bloco*/
+							box-sizing: border-box;
+							padding: 0;
+							height: 100%;
+							width: 100%;
+						}
+						#player video{
+							width: 100%;
+							height: 100%;
+						}
+						.vid{
+							width: 100%;
+							height: 100%;
+						}
+					/*Fim do Primeiro Bloco*/
+				/*Segundo Bloco*/
+					.linha .block2 {
+						/*background-color: blue;*/
+						margin: 1% 0 1% 1%;
+						width: 35%;
+					}
+					.coluna .indic {
+						width: 100%;
+					}
+					.coluna .indic .vid1{
+						padding: 3%;
+						display: inline-block;
+						width: 100%;
+					}
+					.coluna .indic .vid1 .thumb img{
+						display: inline;
+						width: 30%;
+						float: left;
+					}
+					.coluna .indic .vid1 .thumb .preview-time{
+						background-color: rgba(150,50,50,0.6	);
+						color: white;
+						border: none;
+						font-size: 0.8em;
+						border-radius: 3px;
+						padding: 0.4%;	
+						z-index: 1;
+						text-align: center;
+						margin: 0 0 -50% -12%;
+						display: inline;
+									} 
+					.coluna .indic .vid1 .info{
+						width: 70%;
+						margin: -10% 0 0 32%;
+					}
+					.coluna .indic a .vid1 .info h4{
+						font-size: 1.2em;
+						font-weight: 500;
+					}
+					.coluna .indic a .vid1 .info h6{
+						font-size: 0.7em;
+						margin:-5% 0 6% 0;
+						color: #505050;
+					}
+
+					/*Fim do Terceiro Bloco*/
+			/*Divisão da segunda linha (Comentários)*/
+				.linha2{
+					display: none;
+					flex-direction: row;
+					width: 100%;
+				}
+				.linha2_1{
+					display: flex;
+					flex-direction: column;
+					width: 100%;
+					
+				}
+				#comentHead{
+					font-size: 1.6em;
+					color: #404040;
+					font-family: sans-serif;
+					margin: 1% 0 0 3%;	
+					text-decoration: none;
+				}
+				#comentHead small{
+					font-size: 0.7em;
+					margin: -1% 0 0 0;
+				}
+				#comentHead:hover{
+					text-decoration: none;
+				}
+				.coluna1{
+
+				}
+				.coluna2{
+
+				}
+				.linha2_2{
+					display: flex;
+					flex-direction: row;
+				}
+				/* Primeiro Bloco */
+					#addComment{
+						width: 100%;
+						height: 20%;
+					}
+					#addComment img{
+						padding: 1% 2.5%;
+						margin: 0.75% 0 0 0;
+						width: 10%;
+						
+					}
+					#cmntForm{
+						float: right;
+						height: 30%;
+						width: 90%;
+						line-height: 80%;
+					}
+					#cmntForm input[type=text]{
+						width: 80%;
+						border: 2px solid lightgrey;
+						border-bottom: 2px solid rgba(20,30,200,0.1);
+			   		    border-radius: 4px;
+						font-size: 1.4em;
+						padding: 1em 0.4em;		
+						margin: 1.2% 0 0 0;
+					}
+					#addC
+					{
+						margin: inherit;
+						border: none;
+						box-sizing: border-box;	
+						background-color: royalblue;	
+						right: 0;
+						display: inherit;
+					}
+					.coluna1{
+						width: 10%;
+						height: 100%;
+						float: left;
+					}
+					.coluna2{
+						width: 80%;
+						height: 100%;
+						float: right;
+					}
+					.coluna2_row1{
+						height: 70%;
+						display: inline-block;
+					}
+					.coluna2_row2{
+						margin-top: 4%;
+						margin-bottom: 0;
+						height: 30%;
+						width: 100%;
+						display: inline-block;
+					}
+					.comentario{
+						width: 65%;
+						height: 20%;
+						border: 2px solid lightgrey;
+						border-radius: 5px;
+						display: inline-block;
+						padding: 0.5%;
+						overflow-wrap: break-word;
+						word-wrap: break-word;
+						word-break: break-all;
+						margin: 1% 1% 1% 15%;
+						background-color: white;
+					}
+					.comentimg{
+						width: 100%;
+						padding: 0;
+						margin: 0;
+					}
+					.comentario p#data{
+						font-size: 0.75em;
+						margin: 0 0 0% 32.5%;
+						align-self: flex-end;
+						color:gray;
+					}
+					.comentario p#usuario{
+						font-size: 0.8em;
+						text-align: center;
+						padding: 0;
+						color:gray;
+					}
+					#ComentsArea{
+						overflow: auto;
+						width: 100%;
+						margin-top: 20%;
+					}
+					#botoes{
+						float: right;
+						height: 100%;
+						display: none;
+					}
+					#botoes button{
+						height: 40%;
+						margin: 0 0 1.5% 0;
+					}
+					}
+				/*Fim da segunda Linha (Comentários)*/
+			.infos{ 
+				margin: 2% 0 0 0;
+				width: 100%;
+				height: 10%;
+				display: inline-block;
+
+			 }
+			 .infos h1{
+			 	font-size:1.75em;
+			 	margin: 1.5% 0 1.2% 2%;
+			 }
+			 .infos h4{
+			 	font-size:1.25em;
+			 	margin: 0.1% 0 1.5% 2%;
+			 	color: #505050;
+			 }
+			 .Name{
+			 	width: 60%;
+			 	display: inline-block;
+			 }
+			 .LiveStats{
+			 	float: right;
+			 	display: inline-block;
+			 	width: 30%;
+			 	padding: 0;
+			 	margin: 0;
+			 	height: 100%;
+			 }
+			 #Like{
+			 	float: left;
+			 	display: inline-block;
+			 	width: 40%;
+			 }
+			 #Like h5{
+			 	padding: 4%;
+			 	height: 100%;
+			 	font-weight: bold;
+			 	color: royalblue;
+			 	margin: 8% 0 0 25%;
+			 }
+			 #Deslike{
+			 	display: inline-block;
+			 	height: 100%	;
+			 	margin: 0 0 0 2%;
+			 	width: 40%;
+			 }
+			 #Deslike h5{
+			 	padding: 4%;
+			 	height: 100%;
+			 	font-weight: bold;
+			 	color: royalblue;
+			 	margin: 6% 0 0 25%;
+			 }
+			 #LikeIMG{
+			 	float: left;
+			 	width: 25%;
+			 	margin: 5% 0 0 0;
+			 	vertical-align: middle;
+			 }
+			 #deslikeIMG{
+			 	float: left;
+			 	width: 25%;
+			    margin: 5% 0 0 0;
+			 	vertical-align: middle;
+			 }
+			 #plThumb{
+			 	display: none;
+			 }
+			 #plTime{
+			 	display: none;
+			 }
+			 p[name="link"]{
+			 	display: none;
+			 }	
+}

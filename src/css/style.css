@@ -1,0 +1,12 @@
+body{
+	margin: 0;
+}
+.float-left{
+	float: left;
+}
+.float-right{
+	float: right;
+}
+.clear{
+	clear: both;
+}
