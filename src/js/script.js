@@ -114,14 +114,13 @@ $('a[class="troca"]').click(function(){
         resetaLikes();
         });
 $('a[ class="flipkart-navbar-button float-right align-middle"]').click(function(){
-    
     switch(contador){
         case 0:
         $('ul[class="nav navbar-nav"]').slideDown()
         contador++
         break;
         case 1:
-        $('ul[class="nav navbar-nav"]').slideUp();
+        $('ul[class="nav navbar-nav"]').slideUp()
         contador--
         break;
         }
